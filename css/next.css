@@ -39,7 +39,7 @@ nav {
     width: 550px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     color: white;
     border-radius: 15px;
     padding: 30px 40px;
@@ -59,7 +59,7 @@ nav {
     width: 550px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     color: white;
     border-radius: 15px;
     padding: 30px 40px;
