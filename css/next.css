@@ -31,9 +31,9 @@ nav {
     z-index: 1;
 }
 
-.wrapper {
+.box1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 550px;
@@ -45,56 +45,28 @@ nav {
     padding: 30px 40px;
 }
 
-.wrapper h2 {
+.box1 h2 {
     font-size: 36px;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.wrapper p {
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-button {
-    text-align: center;
-    cursor: pointer;
-    height: 50px;
-    padding: 0 20px;
-    color: #fff;
-    vertical-align: top;
-    border-radius: 10px;
-    border: 1px solid transparent;
-    background: #ef1d1d;
-    border-color: #ef1d1d;
-    font-weight: 600;
-    line-height: 16px;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-}
-
-.wrapper .input-box {
-    width: 100%;
-    height: 50px;
-    margin: 12px  0;
-}
-
-.input-box input {
-    width: 100%;
-    height: 100%;
+.box2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
     background: transparent;
-    border: none;
-    outline: none;
     border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+    backdrop-filter: blur(10px);
+    color: white;
+    border-radius: 15px;
+    padding: 30px 40px;
 }
 
-.input-box input::placeholder {
-    color: white;
-    font-size: 15px;
-    align-items: center;
-    bottom: 200px;
+.box2 h2 {
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 2px;
 }
