@@ -1,22 +1,27 @@
+/* universal selector */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-  }
+}
+
+:root {
+    --mellemfolk-red: #ef1d1d;
+    --contrast: #fff;
+}
 
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* height of the banner is equal to 100% of the viewport height */
     background: url(../images/background.png);
     background-size: cover;
 }
 
 h1 {
     font-size: 40px;
-    color: #ef1d1d;
-    font-weight: 300;
+    color: var(--mellemfolk-red);
     font-family: "Arial Bold", sans-serif;
 }
 
@@ -28,7 +33,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 40px 100px;
-    z-index: 1;
+    z-index: 1; /* sets the order of elements - higher number will cover a smaller one */
 }
 
 .wrapper {
@@ -38,9 +43,9 @@ nav {
     transform: translate(-50%, -50%);
     width: 550px;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(20px);
-    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* rgba (red, green, blue, alpha), alpha defines opacity */
+    backdrop-filter: blur(20px); /* blurs the background of the wrapper */
+    color: var(--contrast);
     border-radius: 15px;
     padding: 30px 40px;
 }
@@ -52,21 +57,21 @@ nav {
 }
 
 .wrapper p {
+    margin-left: 10px;
     font-size: 20px;
     letter-spacing: 1px;
 }
 
 button {
     text-align: center;
-    cursor: pointer;
+    cursor: pointer; /* changes cursor icon while located over the button */
     height: 50px;
     padding: 0 20px;
-    color: #fff;
-    vertical-align: top;
+    color: var(--contrast);
     border-radius: 10px;
     border: 1px solid transparent;
-    background: #ef1d1d;
-    border-color: #ef1d1d;
+    background: var(--mellemfolk-red);
+    border-color: var(--mellemfolk-red);
     font-weight: 600;
     line-height: 16px;
     font-size: 16px;
@@ -76,24 +81,23 @@ button {
 .wrapper .input-box {
     width: 100%;
     height: 50px;
-    margin: 12px  0;
+    margin: 12px  0 50px 0;
 }
 
 .input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
-    border: none;
     outline: none;
-    border: 1px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     font-size: 16px;
-    color: #fff;
+    color: var(--contrast);
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: white;
+    color: var(--contrast);
     font-size: 15px;
     align-items: center;
     bottom: 200px;
